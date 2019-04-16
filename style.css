@@ -1,0 +1,42 @@
+.headers {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#profilePic{
+    float:left;
+    width:220px;
+    height:220px;
+    padding-top: 30px;
+    padding-left: 80px;
+    padding-right: 30px;
+}
+
+#hello{
+    font-size: 40px;
+}
+
+#info {
+    font-size: 25px;
+    padding-bottom: 40px;
+}
+
+figure {
+    float: left;
+    width: 220px;
+    height: 220px;
+    text-align: center;
+    font-size: medium;
+    text-indent: 0;
+    border: thick silver solid;
+    padding-left: 20px;
+    padding-bottom: 260px;
+    padding-right: 20px;
+}
+
+#extraPadding{
+    padding: 20px 30px;
+}
+
