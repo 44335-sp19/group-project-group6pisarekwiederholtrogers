@@ -1,5 +1,4 @@
 /*Social Media Shadow javascript*/
-
 function MouseOver(elem) {
   elem.style.boxShadow = "-10px -18px 6px gray";
 }
@@ -9,7 +8,6 @@ function MouseOut(elem) {
 }
 
 /*Slideshow jQuery*/
-
 $("#slideshow > div:gt(0)").hide();
 
 setInterval(function() { 
@@ -22,7 +20,12 @@ setInterval(function() {
 },  4000);
 
 /*Contact Form javascript*/
-
 function myFunction() {
   alert("Thank you for your response!");
 }
+
+/*javascript Alert Button*/
+function Warn() {
+        alert ("This is a warning message!");
+        document.write ("This is a warning message!");
+            };
