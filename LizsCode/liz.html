@@ -10,7 +10,7 @@
 
   <title>Liz's Portfolio</title>
 
-    <!--Liz's Css-->
+    <!--Liz's CSS-->
     <link href="style.css" rel="stylesheet">
     
     <!-- Bootstrap core CSS -->
@@ -23,10 +23,7 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     
-    <!--Liz's jQuery-->
-    <script src="jQuery.js"></script>
-    
-    <!--Liz's JavaScript-->
+    <!--Liz's JavaScript & jQuery-->
     <script src="javascript.js"></script>
 
 </head>
@@ -84,22 +81,46 @@
     
     <!--Contact Me Area-->
     <img src="Contact.png" class="mx-auto d-block p-4" alt="CONTACT">
-    <div class="container">
-  <div class="row">
-    <div class="col-sm">
+    
+    <!--Social Media Icons-->
+    <div class="row">
+        <div class="col-md-6">
+        <div id="col-sm">
     <a id="col-social" onmouseover="MouseOver(this);" onmouseout="MouseOut(this);" href="http://twitter.com" target="_blank"> <img src="twitter.png" alt="Twitter"/></a>
     <a id="col-social" onmouseover="MouseOver(this);" onmouseout="MouseOut(this);" href="http://www.facebook.com" target="_blank"> <img src="facebook.png" alt="Facebook"/></a> 
     <a id="col-social" onmouseover="MouseOver(this);" onmouseout="MouseOut(this);" href="http://www.linkedin.com" target="_blank"> <img src="linkedin.png" alt="LinkedIn"/></a> <br> <br>
-        
+    <!--Email & Telephone-->
     <a href="mailto:some@email.com" target="_blank" class="btn btn-primary">pisareksoccer22@gmail.com</a> <br> <br>
     <a href="tel:713-992-0916" target="_blank" class="btn btn-primary">1-800-588-2424</a>
+        </div>
+        </div>
         
-        
-        
-        
-</div>
-      </div>
-</div>
+        <!--Contact Form-->
+        <div class="col-md-6">
+        <div class="row">                       
+                <h2>Contact</h2>
+              </div>
+                <div class="row">
+                    <form id="contact-form" class="form">
+                <div class="form-group">
+                  <label class="form-label" for="name">Your Name</label>
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Your name" tabindex="1" required>
+                </div>                            
+                <div class="form-group">
+                  <label class="form-label" for="email">Your Email</label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" tabindex="2" required>
+                </div>                                                    
+                <div class="form-group">
+                  <label class="form-label" for="message">Message</label>
+                  <textarea rows="5" cols="50" name="message" class="form-control" id="message" placeholder="Message..." tabindex="4" required></textarea>                                 
+                </div>
+              <div class="text-center">
+                  <button id="sendmessage" type="reset" value="Reset" onclick="myFunction()">Send Message</button>
+              </div>
+          </form>
+        </div>
+    </div>
+    </div>
 
   <!-- Footer -->
   <footer class="py-5 bg-dark">
