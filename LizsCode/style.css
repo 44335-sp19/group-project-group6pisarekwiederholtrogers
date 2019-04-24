@@ -25,6 +25,55 @@
     bottom: 10px; 
 }
 
+/*Portfolio Work*/
+#description, #project {
+  padding: 5px;
+  text-align: center;
+  background-color: #007bff;
+  border: solid 1px #c3c3c3;
+  color: white;
+  font-family: monospace;
+  font-size: 20px;
+}
+
+#description {
+  padding: 50px;
+  display: none;
+  font-size: 15px;
+}
+
+#description2, #project2 {
+  padding: 5px;
+  text-align: center;
+  background-color: #007bff;
+  border: solid 1px #c3c3c3;
+  color: white;
+  font-family: monospace;
+  font-size: 20px;
+}
+
+#description2 {
+  padding: 50px;
+  display: none;
+  font-size: 15px;
+}
+
+#description3, #project3 {
+  padding: 5px;
+  text-align: center;
+  background-color: #007bff;
+  border: solid 1px #c3c3c3;
+  color: white;
+  font-family: monospace;
+  font-size: 20px;
+}
+
+#description3 {
+  padding: 50px;
+  display: none;
+  font-size: 15px;
+}
+
 /*SOCIAL MEDIA*/
 
 #col-social{
@@ -42,8 +91,8 @@ textarea {
 	resize: none;
 }
 .form-label {
-	font-size: 12px;
-	color: #5e9bfc;
+	font-size: 15px;
+	color: #007bff;;
 	margin: 0;
 	opacity: 1;
 }
@@ -73,6 +122,6 @@ textarea {
     transition: all 0.25s ease 0s;
 }
 #sendmessage:hover {
-	border-color: #5e9bfc;
+	border-color: #007bff;
 	color: #5e9bfc;
 }

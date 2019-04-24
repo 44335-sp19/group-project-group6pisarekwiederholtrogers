@@ -24,8 +24,28 @@ function myFunction() {
   alert("Thank you for your response!");
 }
 
-/*javascript Alert Button*/
+/*javascript Warn Button*/
 function Warn() {
-        alert ("This is a warning message!");
-        document.write ("This is a warning message!");
-            };
+    alert ("Fun fact:\n\nI have never broken a bone in my life!");
+        };
+
+/*jquery Project #1 slideToggle*/
+$(document).ready(function(){
+  $("#project").click(function(){
+    $("#description").slideToggle("slow");
+  });
+});
+
+/*jquery Project #2 slideToggle*/
+$(document).ready(function(){
+  $("#project2").click(function(){
+    $("#description2").slideToggle("slow");
+  });
+});
+
+/*jquery Project #3 slideToggle*/
+$(document).ready(function(){
+  $("#project3").click(function(){
+    $("#description3").slideToggle("slow");
+  });
+});
