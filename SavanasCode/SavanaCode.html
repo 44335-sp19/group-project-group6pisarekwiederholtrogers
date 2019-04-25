@@ -22,65 +22,119 @@
     
     <!--Savana's JavaScript-->
     <script src="javascript.js"></script>
-  </head>
+    <script>
+$(document).ready(function(){
+  $(".btn1").click(function(){
+    $("p").fadeOut()
+  });
+  $(".btn2").click(function(){
+    $("p").fadeIn();
+  });
+});
+</script>
+</head>
   <body>
      
-      <!--Nav Bar- Bootstrap-->
-      <ul class="nav nav-tabs">
-  <li class="nav-item">
-    <a class="nav-link active" href="#">Home</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Savana</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Elizabeth</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link disabled" href="#">Lucas</a>
-  </li>
-</ul>
-      
+   
+  
+         <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <!-- Bootstrap Nav Bar Brand/logo -->
+  <a class="navbar-brand" href="#">
+    <img src="images/swlogo.png" alt="logo" style="width:40px;">
+  </a>
+  
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Savana</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Elizabeth</a>
+    </li>
+       <li class="nav-item">
+      <a class="nav-link" href="#">Lucas</a>
+    </li>
+  </ul>
+</nav>
+
+<div class="container-fluid">
+</div> 
     <!-- Header - set the background image for the header in the line below -->
-  <header style="background-image: url('images/coloradomeadow.jpg');">
+  <div class="jumbotron">
+          </div>
+          <header style="background-image: url('images/coloradomeadow.jpg');">
       <div id="slideshow">
         <div>
             <img  src="images/Savana.jpg" alt="Savana Wiederholt Image" length="200" height="200">
         </div>
+          <div>
+            <img  src="images/Savana.jpg" alt="Savana Wiederholt Image" length="200" height="200">
+          </div>
       </div>
   </header>
       
+
+<body>
+      
+    <!-- JQuery hide and show message-->
+<p><strong>Welcome to my Portfolio!</strong></p>
+
+<button class="btn1">Click to hide the message.</button>
+<button class="btn2">Click to see the message.</button>
+
         <section class="py-5">
-    <div class="container">
+    <div class="container-fluid">
       <h1>Savana Wiederholt</h1>
-      <p class="lead">IDM: Computer Science</p>
+         <!-- Bootstrap Primary color box-->
+        <div class="alert alert-primary">
+    <strong>Digital Media:</strong> New Media
+  </div>
       <p> I am currently a Senior at Northwest Missouri State University in Maryville, Missouri studying Digital Media with an emphasis in New Media. This major has allowed me to gain experience in a variety of areas including graphic design in print and digital, web development and web design, and advertising and marketing strategies. I am also involved in the Advertising Club on campus which has given me opportunities to tour advertising agencies and network with professionals in the field. I graduate in December of 2019, and plan to seek a career at an advertising agency in Kansas City as a designer. I am very organized and detail oriented, and I love to learn new things. I also love adventure and traveling.</p>
     </div>
   </section>
       
       <img src="images/Portfolio.png" class="mx-auto d-block p-4" alt="PORTFOLIO"> <br>
            
-       
+       <div class="container-fluid">
+</div>
       <div class="row">
           <div class="col">
       <figure>
-        <p><img src="images/infographiconcounter.jpg" alt="Tracking Macros Infographic" class="mx-auto d-block" width="340" height="320">
+            <!-- Bootstrap rounded corners-->
+        <p><img src="images/infographiconcounter.jpg" alt="Tracking Macros Infographic" class="rounded" class="mx-auto d-block" width="380" height="380">
             <figcaption class="text-center"><b>Tracking Macros Infographic</b> <br> <br>This infographic is intended to inform viewers about the advantages of tracking macros and calories to meet personal goals and how to figure out how many calories one should be intaking based on Basal Metabolic Rate and activity level. After determining how many calories one should intake per day, the infographic walks through how to break calories down into macronutrients including carbs, proteins, and fats. </figcaption>
       </figure></div>
           
             <div class="col">
       <figure>
-        <p><img src="images/CRRM%20Website.png" alt="Cedar Ridge Rustic Millwork Website" class="float-left" width="520" height="320">
+        <p><img src="images/CRRM%20Website.png" alt="Cedar Ridge Rustic Millwork Website" width="380" height="250">
             <figcaption class="text-center"> <b>Cedar Ridge Rustic Millwork Website</b> <br> <br>This website is for a timber, iron and millwork company that focuses on timber frame trusses and rustic renovations. This company rebranded from a 30 year old custom home building company so I created a new website to showcase his new products and services and appeal to his target market. The website also accompanied a complete rebranding of his business. I designed the website using a CMS, Wix for usability and ease of editing. Here is the link to the website: <a href="https://www.cedarridgerusticmillwork.com.">Cedar Ridge Rustic Millwork</a> </figcaption>
               </figure></div>
       
          <div class="col">
       <figure>
-        <p><img src="images/brochureoncounter.jpg" alt="Cedar Ridge Rustic Millwork Brochure" class="float-right" width="340" height="320">
+        <p><img src="images/brochureoncounter.jpg" alt="Cedar Ridge Rustic Millwork Brochure" width="380" height="380">
             <figcaption class="text-center"><b>Cedar Ridge Rustic Millwork Brochure</b> <br> <br>This is a brochure for Cedar Ridge Rustic Millwork to be an easy handout to businesses and potential clients. The brochure is intended to accompany a client meeting in order to spark interest and questions while providing a brief overview of all services provided. The brochure matches the style of the website and other branding products to create a cohesive brand package.</figcaption>
              </figure></div>
           </div> <br>
     
+     <!--Contact Me Area-->
+    <img src="images/Contact.png" class="mx-auto d-block p-4" alt="CONTACT">
+    
+ <!-- Footer -->
+  <footer class="py-5 bg-primary">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Pisarek, Rogers, & Wiederholt Website 2019</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor1/jquery/jquery.min.js"></script>
+  <script src="vendor1/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   </body>
 </html>
