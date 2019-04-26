@@ -187,6 +187,14 @@ textarea {
   display: none;
 }
 
+.mySlides2 {
+  display: none;
+}
+
+.mySlides3 {
+  display: none;
+}
+
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
@@ -250,20 +258,16 @@ textarea {
   background-color: #717171;
 }
 
-/* Fading animation 
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}*/
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+.descript{
+  padding: 5px;
+  text-align: center;
+  border: solid 1px #c3c3c3;
+  color: black;
+  font-family: monospace;
+  font-size: 15px;
 }
 
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+.resume{
+    display: block;
+    padding left: 100px;
 }

@@ -6,17 +6,15 @@ function MouseOut(elem) {
   elem.style.boxShadow = "none";
 }
 
-/*Slideshow jQuery*/
+/*Fade in jQuery*/
 $("#slideshow > div:gt(0)").hide();
 
 setInterval(function() { 
   $('#slideshow > div:first')
-    .fadeOut(1500)
-    .next()
-    .fadeIn(2500)
+    .fadeIn(2000)
     .end()
     .appendTo('#slideshow');
-},  8000);
+},  4000);
 
 /*Contact Form javascript*/
 function myFunction() {
@@ -27,27 +25,6 @@ function myFunction() {
 function Warn() {
     alert ("Fun fact:\n\nI have never broken a bone in my life!");
         };
-
-/*jquery Project #1 slideToggle
-$(document).ready(function(){
-  $("#project").click(function(){
-    $("#description").slideToggle("slow");
-  });
-});*/
-
-/*jquery Project #2 slideToggle
-$(document).ready(function(){
-  $("#project2").click(function(){
-    $("#description2").slideToggle("slow");
-  });
-});*/
-
-/*jquery Project #3 slideToggle
-$(document).ready(function(){
-  $("#project3").click(function(){
-    $("#description3").slideToggle("slow");
-  });
-});*/
 
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -77,3 +54,69 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block"; 
   dots[slideIndex-1].className += " active";
 }
+
+function plusSlides2(n) {
+  showSlides2(slideIndex += n);
+}
+
+function showSlides2(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides2");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+
+function plusSlides3(n) {
+  showSlides3(slideIndex += n);
+}
+
+function showSlides3(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides3");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+
+/*jquery Project #1 slideToggle*/
+$(document).ready(function(){
+  $("#project").click(function(){
+    $("#description").slideToggle("slow");
+  });
+});
+
+/*jquery Project #2 slideToggle*/
+$(document).ready(function(){
+  $("#butn1").click(function(){
+    $("#welcome").slideToggle("slow");
+  });
+});
+
+/*jquery Project #3 slideToggle*/
+$(document).ready(function(){
+  $("#project3").click(function(){
+    $("#description3").slideToggle("slow");
+  });
+});
+
+/* Button*/
+$(document).ready(function(){
+  $('#resume').zoom({url: 'Resume.PNG'});
+});
