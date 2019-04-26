@@ -40,6 +40,7 @@
   padding: 50px;
   display: none;
   font-size: 15px;
+  text-align: left;
 }
 
 #description2, #project2 {
@@ -56,6 +57,7 @@
   padding: 50px;
   display: none;
   font-size: 15px;
+    text-align: left;
 }
 
 #description3, #project3 {
@@ -72,6 +74,7 @@
   padding: 50px;
   display: none;
   font-size: 15px;
+  text-align: left;
 }
 
 /*SOCIAL MEDIA*/
