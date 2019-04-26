@@ -1,6 +1,6 @@
 /*Social Media Shadow javascript*/
 function MouseOver(elem) {
-  elem.style.boxShadow = "-10px -18px 6px gray";
+  elem.style.boxShadow = "-10px -18px 6px lightblue";
 }
 
 function MouseOut(elem) {

@@ -131,3 +131,24 @@ textarea {
     background-color: #cce5ff;
     border-color: #b8daff;
 }
+
+/*Bio Information*/
+#bio, #information{
+    padding: 5px;
+    text-align: center;
+    background-color: white;
+    border: solid 5px lightblue;
+    color: black;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+#bio{
+    padding: 40px;
+    display: none;
+    font-size: 16px;
+}
+
+#welcome{
+    padding-left: 18px;
+}

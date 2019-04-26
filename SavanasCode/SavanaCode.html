@@ -32,19 +32,19 @@ $(document).ready(function(){
   });
 });
         $(document).ready(function(){
-  $(".btn3").click(function(){
-    $("#info").slideDown();
-  });
-});
+    $("#information").click(function(){
+    $("#bio").slideToggle("slow");
+        });
+    });
     
 function bigImg(x) {
-  x.style.height = "64px";
-  x.style.width = "64px";
+  x.style.height = "300px";
+  x.style.width = "300px";
 }
 
 function normalImg(x) {
-  x.style.height = "32px";
-  x.style.width = "32px";
+  x.style.height = "200px";
+  x.style.width = "200px";
 }
 </script>
 </head>
@@ -75,27 +75,18 @@ function normalImg(x) {
   </ul>
 </nav> <br>
 
-<div class="container-fluid">
-</div> 
-    <!-- Header - set the background image for the header in the line below -->
-          <header style="background-image: url('images/coloradomeadow.jpg');">
-              <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="images/coloradomeadow.jpg" alt="Colorado Meadow">
-
-      <div id="slideshow">
-        <div>
-            <img  src="images/Savana.jpg" alt="Savana Wiederholt Image" length="200" height="200">
-        </div>
-          <div>
-            <img  src="images/Savana.jpg" alt="Savana Wiederholt Image" length="200" height="200">
-          </div>
-      </div>
-  </header>
+    <header style="background-image: url('images/coloradomeadow.jpg');">
+      <div class="container-fluid"> 
       
+    <!-- Header - set the background image for the header in the line below -->
+<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="images/Savana.jpg" alt="Savana" width="200" height="200">  
+        </div>
+      </header>    
 
 <body>
       
     <!-- JQuery hide and show message-->
-<p><strong>Welcome to my Portfolio!</strong></p>
+<p id="welcome"><strong>Welcome to my Portfolio!</strong></p>
 
 <button class="btn1">Click to hide the message.</button>
 <button class="btn2">Click to see the message.</button>
@@ -106,12 +97,11 @@ function normalImg(x) {
          <!-- Bootstrap Primary color box-->
         <div class="alert alert-primary">
     <strong>Digital Media:</strong> New Media
-            <br>
-            <!-- JavaScript slide down method-->
-            <button class="btn3">Click to learn about me!</button>
-  </div>
-      <p id="info"> I am currently a Senior at Northwest Missouri State University in Maryville, Missouri studying Digital Media with an emphasis in New Media. This major has allowed me to gain experience in a variety of areas including graphic design in print and digital, web development and web design, and advertising and marketing strategies. I am also involved in the Advertising Club on campus which has given me opportunities to tour advertising agencies and network with professionals in the field. I graduate in December of 2019, and plan to seek a career at an advertising agency in Kansas City as a designer. I am very organized and detail oriented, and I love to learn new things. I also love adventure and traveling.</p>
+            <div id="information">Click to learn about me!</div>
+            <div id="bio">I am currently a Senior at Northwest Missouri State University in Maryville, Missouri studying Digital Media with an emphasis in New Media. This major has allowed me to gain experience in a variety of areas including graphic design in print and digital, web development and web design, and advertising and marketing strategies. I am also involved in the Advertising Club on campus which has given me opportunities to tour advertising agencies and network with professionals in the field. I graduate in December of 2019, and plan to seek a career at an advertising agency in Kansas City as a designer. I am very organized and detail oriented, and I love to learn new things. I also love adventure and traveling.</div>
     </div>
+            <!-- JavaScript slide down method-->
+  </div>
   </section>
       
       <img src="images/Portfolio.png" class="mx-auto d-block p-4" alt="PORTFOLIO"> <br>
