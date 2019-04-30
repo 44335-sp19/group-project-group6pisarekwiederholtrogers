@@ -6,11 +6,13 @@ function MouseOut(elem) {
   elem.style.boxShadow = "none";
 }
 
-/*Fade in jQuery*/
+/*Slideshow jQuery*/
 $("#slideshow > div:gt(0)").hide();
 
 setInterval(function() { 
   $('#slideshow > div:first')
+    .fadeOut(1000)
+    .next()
     .fadeIn(2000)
     .end()
     .appendTo('#slideshow');
